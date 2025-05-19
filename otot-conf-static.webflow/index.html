@@ -1,0 +1,1366 @@
+<!DOCTYPE html><!--  Last Published: Mon May 19 2025 14:04:29 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6807cd3aa4e7340fb1d995ab" data-wf-site="6807cd3aa4e7340fb1d995b5">
+<head>
+  <meta charset="utf-8">
+  <title>OTOT Conference 2025 - Future of Work is Remote</title>
+  <meta content="OTOT Conference 2025, where professionals meet, greet and connect with top remote work employers &amp; experts all over the world with real work opportunities" name="description">
+  <meta content="OTOT Conference 2025 - Future of Work is Remote" property="og:title">
+  <meta content="OTOT Conference 2025, where professionals meet, greet and connect with top remote work employers &amp; experts all over the world with real work opportunities" property="og:description">
+  <meta content="OTOT Conference 2025 - Future of Work is Remote" property="twitter:title">
+  <meta content="OTOT Conference 2025, where professionals meet, greet and connect with top remote work employers &amp; experts all over the world with real work opportunities" property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/components.css" rel="stylesheet" type="text/css">
+  <link href="css/otot-conference.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.jpg" rel="apple-touch-icon">
+  <script>
+  document.documentElement.setAttribute('lang', 'en');
+</script>
+</head>
+<body class="body">
+  <div class="hidden__info">
+    <div class="hidden__note--overview w-embed"><!--   -->
+      <!--  ----------------------------------------  -->
+      <!--  Webflow : General Tips and Tricks  -->
+      <!--  ----------------------------------------  -->
+      Tested: Freelance WS plan to Starter Site Plan (Free)
+      - Published 5 pages to staging webflow.io = Can
+      - Put a custom code for hidden form field = Can
+      Tested: Exported Code to Host on Netlify
+      - Menu > Export Code > Download ZIP
+      - Note: exported HTML will NOT have <html lang="en">
+      - Can directly drag drop unzipped folder to Netlify
+      Tested: Used 3-party Form API to handle forms
+      - Easiest: FormBold
+      - Just use FormBold's URL via POST method
+      - No need Embed Code block
+      - No need API key
+      - FormBold has Captcha, Dashboard, 100 sends/mth
+      Tip: Remove unused media assets easily
+      - Left Sidebar > Assets > Expand panel
+      - Select ALL > Delete
+      - Top Bar > Publish
+      - Refresh browser
+      - Anything published are retained, everything else deleted
+      Tip: Compress assets to AVIF or WEBP
+      - Left Sidebar > Assets > Expand panel
+      - Select > Compress > AVIF
+      - All instances updates to the AVIF version
+      Tip: Turn any image black and white easily
+      - Select image
+      - Right sidebar > Effects > Filters > Grayscale
+      Tip: Transition speed of hover
+      - This is to set the speed of hover effects
+      - Select the based element
+      - Right sidebar > Effects > Transitions > ALL Properties
+      - Recommend 400ms or 800ms
+      Tip: Gradient color for text
+      - This is to set a gradient for typography
+      - Select the text element
+      - Right sidebar > Backgrounds > + Image and Gradient
+      - Configure your gradient
+      - Clipping > Background to Text
+      Tip: Variable Typography
+      - Use 1 variable WOFF/WOFF2 for multiple weight
+      - Upload via Site Settings > Fonts
+      - Select the text element
+      - Right sidebar > Typography > Font > Weight
+      - Variable fonts have • beside name
+      Tip: For Absolute elements that hang in center
+      - Select the element
+      - Right sidebar > Position > Absolute
+      - Top (25%) Bottom (25%)
+      Tip: STICKY positioning DON'T work with overflow
+      - If ANY Parent with 👁 Overflow:Hidden = Fail
+      - STICKY positioning DON'T work with 👁 Overflow Hidden
+      - STICKY scroll works only within the height of the parent container
+      - If we want something that sticks THROUGHOUT, use FIXED instead
+      - If we want something that sticks PARTIALLY, use STICKY instead
+      Tip: Use Absolute positioning with Relative
+      - To let your floating element use Absolute
+      - Make sure the parent is using Relative
+      Tip: Look for ⚡︎ Bolt Icon for Layers with Interactions
+      - Open your Navigator > Open up the layers
+      - If a layer has Interactions, look for ⚡︎ Bolt icon at the right
+      - Sadly, there is no other way to quickly identify Interactions
+      <!--  ----------------------------------------  -->
+      <!--  Webflow : Preset Settings  -->
+      <!--  ----------------------------------------  -->
+      Site Settings >
+      - General > Localization > Set GMT+8
+      - General > Webflow Branding > Off
+      - Publishing > Webflow.io > Rename
+      - Publishing > Advanced > On
+      - Fonts > Disable Google Fonts API
+      - Fonts > Upload custom (variable if possible)
+      Inside Designer mode, DOT beside the font name
+      <!--  ----------------------------------------  -->
+      <!--  Client-First : Structure   -->
+      <!--  ----------------------------------------  -->
+      Body >
+      ---Page-Wrapper <--fixed-->
+        --------Custom-Code <--optional-->
+          <✳️component>
+            --------Custom-Grid <--optional-->
+              <✳️component>
+                --------Main-Wrapper <--fixed-->
+                  ------------Navbar <--fixed-->
+                    ------------Section__xxxxx--yyyyy <✴️custom-name>
+                      ----------------Padding-Global <--fixed-->
+                        --------------------Container-Large <--fixed-->
+                          ------------------------Grid__X-Column <--fixed-->
+                            ----------------------------Align__Center <--fixed-->
+                              ------------Footer <--fixed-->
+                                <!--  ----------------------------------------  -->
+                                <!--  S2 Framework : Structure   -->
+                                <!--  ----------------------------------------  -->
+                                Body >
+                                ---Global-Code <--optional-->
+                                  <✳️component>
+                                    ---Local-Code <--optional-->
+                                      <✳️component>
+                                        ---Grid-Guide <--optional-->
+                                          <✳️component>
+                                            ---Page <--fixed-->
+                                              --------Navbar <--fixed-->
+                                                --------Main <--fixed-->
+                                                  ------------Section <--fixed--> <stack-with-a-✴️custom-name>
+                                                      ------------Section <--fixed--> <stack-with-a-✴️custom-name>
+                                                          ----------------Container <--fixed-->
+                                                            --------------------Subsection-xxx-wrapper <✴️custom-name>
+                                                              --------------------Subsection-yyy-wrapper <✴️custom-name>
+                                                                ------------------------Col-Left <*️⃣utility>
+                                                                  ------------------------Col-Right <*️⃣utility>
+                                                                    --------Footer <--fixed-->
+                                                                      • Section is ONLY top, bottom padding
+                                                                      • Container is ONLY left, right padding and margin
+                                                                      <!--  ---------------------------------  -->
+                                                                      <!--  Lumos : Structure  -->
+                                                                      <!--  ---------------------------------  -->
+                                                                      Body >
+                                                                      ---page_wrap >
+                                                                      ------Custom__Code <--optional-->
+                                                                        <✳️component>
+                                                                          ------Grid__Guide <--optional-->
+                                                                            <✳️component>
+                                                                              ------nav_wrap <--fixed-->
+                                                                                ------page_main <--fixed-->
+                                                                                  ----------section_hero_wrap <✴️custom-name>
+                                                                                    --------------section_hero_css <--optional-->
+                                                                                      <✳️component>
+                                                                                        --------------section_hero_contain <*️⃣utility>
+                                                                                          ------------------section_hero_layout <--optional-->
+                                                                                            ----------------------section_hero_content <--optional-->
+                                                                                              --------------------------section_hero_title <*️⃣utility(h2)>
+                                                                                                --------------------------section_hero_text <*️⃣utility>
+                                                                                                  ----------section_intro_wrap <✴️custom-name>
+                                                                                                    --------------section_intro_css <--optional-->
+                                                                                                      <✳️component>
+                                                                                                        --------------section_intro_contain <*️⃣utility>
+                                                                                                          ------------------section_intro_layout <--optional-->
+                                                                                                            ----------------------section_intro_content <--optional-->
+                                                                                                              --------------------------section_intro_yyyyy <--optional-->
+                                                                                                                ------------------------------section_intro__section <--optional-->
+                                                                                                                  ----------------------------------section_intro__title <*️⃣utility>
+                                                                                                                    ----------------------------------section_intro__group <*️⃣utility>
+                                                                                                                      ------footer_wrap <--fixed-->
+    </--fixed--></*️⃣utility></*️⃣utility></--optional--></--optional--></--optional--></--optional--></*️⃣utility></✳️component></--optional--></✴️custom-name></*️⃣utility></*️⃣utility(h2)></--optional--></--optional--></*️⃣utility></✳️component></--optional--></✴️custom-name></--fixed--></--fixed--></✳️component></--optional--></✳️component></--optional--></--fixed--></*️⃣utility></*️⃣utility></✴️custom-name></✴️custom-name></--fixed--></stack-with-a-✴️custom-name></--fixed--></stack-with-a-✴️custom-name></--fixed--></--fixed--></--fixed--></--fixed--></✳️component></--optional--></✳️component></--optional--></✳️component></--optional--></--fixed--></--fixed--></--fixed--></--fixed--></--fixed--></✴️custom-name></--fixed--></--fixed--></✳️component></--optional--></✳️component></--optional--></--fixed--></html></div>
+    <div class="hidden__note--clientfirst w-embed"><!--  ----------------------------------------  -->
+      <!--  Client-First : Structure (DEFAULT)  -->
+      <!--  ----------------------------------------  -->
+      Body >
+      ---Page-Wrapper <--fixed-->
+        --------Custom-Code <--optional-->
+          <✳️component>
+            --------Custom-Grid <--optional-->
+              <✳️component>
+                --------Main-Wrapper <--fixed-->
+                  ------------Navbar <--fixed-->
+                    ------------Section__xxxxx--yyyyy <✴️custom-name>
+                      ----------------Padding-Global <--fixed-->
+                        --------------------Container-Large <--fixed-->
+                          ------------------------Grid__X-Column <--fixed-->
+                            ----------------------------Align__Center <--fixed-->
+                              ------------Footer <--fixed-->
+                                <!--  ----------------------------------------  -->
+                                <!--  Client-First : Structure (MODIFIED)  -->
+                                <!--  ----------------------------------------  -->
+                                Body >
+                                ---Custom__Code <--optional-->
+                                  <✳️component>
+                                    ---Custom__Grid <--optional-->
+                                      <✳️component>
+                                        ---Page-Wrapper <--fixed-->
+                                          --------Navbar <--fixed-->
+                                            --------Main-Wrapper <--fixed-->
+                                              ------------Section__xxxxx--yyyyy <✴️custom-name>
+                                                ------------Section__xxxxx--yyyyy <✴️custom-name>
+                                                  ----------------g__Padding <--fixed-->
+                                                    --------------------g__Container__Large <--fixed-->
+                                                      ------------------------g__Grid__X-Column <--optional-->
+                                                        ----------------------------g__Align__Center <--optional-->
+                                                          <*️⃣utility>
+                                                            --------Footer <--fixed-->
+                                                              • Use Utility classes to modify the sub-layers inside Sections
+                                                              <!--  ----------------------------------------  -->
+                                                              <!--  S2 Framework : Layer Structure (Default)  -->
+                                                              <!--  ----------------------------------------  -->
+                                                              Body >
+                                                              ---Global-Code <--optional-->
+                                                                <✳️component>
+                                                                  ---Local-Code <--optional-->
+                                                                    <✳️component>
+                                                                      ---Grid-Guide <--optional-->
+                                                                        <✳️component>
+                                                                          ---Page <--fixed-->
+                                                                            --------Navbar <--fixed-->
+                                                                              --------Main <--fixed-->
+                                                                                ------------Section <--fixed--> <stack-with-a-✴️custom-name>
+                                                                                    ------------Section <--fixed--> <stack-with-a-✴️custom-name>
+                                                                                        ----------------Container <--fixed-->
+                                                                                          --------------------Subsection-xxx-wrapper <✴️custom-name>
+                                                                                            --------------------Subsection-yyy-wrapper <✴️custom-name>
+                                                                                              ------------------------Col-Left <*️⃣utility>
+                                                                                                ------------------------Col-Right <*️⃣utility>
+                                                                                                  --------Footer <--fixed-->
+                                                                                                    • Section is ONLY top, bottom padding
+                                                                                                    • Container is ONLY left, right padding and margin
+                                                                                                    <!--  ---------------------------------  -->
+                                                                                                    <!--  Lumos : Layer Structure (Default)  -->
+                                                                                                    <!--  ---------------------------------  -->
+                                                                                                    Body >
+                                                                                                    ---page_wrap >
+                                                                                                    ------Custom__Code <--optional-->
+                                                                                                      <✳️component>
+                                                                                                        ------Grid__Guide <--optional-->
+                                                                                                          <✳️component>
+                                                                                                            ------nav_wrap <--fixed-->
+                                                                                                              ------page_main <--fixed-->
+                                                                                                                ----------section_hero_wrap <✴️custom-name>
+                                                                                                                  --------------section_hero_css <--optional-->
+                                                                                                                    <✳️component>
+                                                                                                                      --------------section_hero_contain <*️⃣utility>
+                                                                                                                        ------------------section_hero_layout <--optional-->
+                                                                                                                          ----------------------section_hero_content <--optional-->
+                                                                                                                            --------------------------section_hero_title <*️⃣utility(h2)>
+                                                                                                                              --------------------------section_hero_text <*️⃣utility>
+                                                                                                                                ----------section_intro_wrap <✴️custom-name>
+                                                                                                                                  --------------section_intro_css <--optional-->
+                                                                                                                                    <✳️component>
+                                                                                                                                      --------------section_intro_contain <*️⃣utility>
+                                                                                                                                        ------------------section_intro_layout <--optional-->
+                                                                                                                                          ----------------------section_intro_content <--optional-->
+                                                                                                                                            --------------------------section_intro_yyyyy <--optional-->
+                                                                                                                                              ------------------------------section_intro__section <--optional-->
+                                                                                                                                                ----------------------------------section_intro__title <*️⃣utility>
+                                                                                                                                                  ----------------------------------section_intro__group <*️⃣utility>
+                                                                                                                                                    ------footer_wrap <--fixed-->
+                                                                                                                                                      <!--  -------------  -->
+                                                                                                                                                      <!--  Lumos : Usage  -->
+                                                                                                                                                      <!--  -------------  -->
+                                                                                                                                                      Lumos uses 4 types of classes:
+                                                                                                                                                      1. Local (Section) classes : starts with "sectionname_"
+                                                                                                                                                      2. Global classes : starts with "g_"
+                                                                                                                                                      3. Utility classes : starts with "u-"
+                                                                                                                                                      4. Combo classes : starts with "is-"
+                                                                                                                                                      1. Local/Section (component) classes include:
+                                                                                                                                                      ⚠️Used: Only within a parent component
+                                                                                                                                                      ⚠️For: Components that can used only 1 place
+                                                                                                                                                      hero_wrap <-> slide_vertical_wrap <-> testimonial_wrap
+                                                                                                                                                          hero_contain <-> slide_vertical_contain <-> testimonial_contain
+                                                                                                                                                              hero_title <-> slide_vertical_title <-> testimonial_title
+                                                                                                                                                                  hero_table <-> slide_vertical_table <-> testimonial_table
+                                                                                                                                                                      2. Global (component) classes include:
+                                                                                                                                                                      ⚠️Used: Anywhere (doesn't have to be a specific component)
+                                                                                                                                                                      ⚠️For: Components that can used multiple places
+                                                                                                                                                                      g_paragraph <-> g_heading
+                                                                                                                                                                        g_eyebrow_wrap <-> g_eyebrow_layout
+                                                                                                                                                                          3. Utility (modification) classes include:
+                                                                                                                                                                          ⚠️Used: On top of component classes
+                                                                                                                                                                          ⚠️For: Change styles of component classes
+                                                                                                                                                                          u-text-style-h1 <-> to u-text-style-h6
+                                                                                                                                                                            u-theme-light <-> u-theme-dark
+                                                                                                                                                                              u-text-xsmall <-> u-text-xlarge
+                                                                                                                                                                                u-align-self-center <-> u-align-self-start <-> u-align-self-stretch
+                                                                                                                                                                                    u-grid-autofit <-> u-grid-autofill
+                                                                                                                                                                                      4. Combo (modification) classes include:
+                                                                                                                                                                                      ⚠️Used: On top of component classes BUT NOT with utilty classes
+                                                                                                                                                                                      ⚠️For: Similar to utility classe, but more specific
+                                                                                                                                                                                      is-reversed <-> is-disabled <-> is-active
+    </-></-></-></-></-></-></-></-></-></-></-></-></-></-></-></-></-></-></--fixed--></*️⃣utility></*️⃣utility></--optional--></--optional--></--optional--></--optional--></*️⃣utility></✳️component></--optional--></✴️custom-name></*️⃣utility></*️⃣utility(h2)></--optional--></--optional--></*️⃣utility></✳️component></--optional--></✴️custom-name></--fixed--></--fixed--></✳️component></--optional--></✳️component></--optional--></--fixed--></*️⃣utility></*️⃣utility></✴️custom-name></✴️custom-name></--fixed--></stack-with-a-✴️custom-name></--fixed--></stack-with-a-✴️custom-name></--fixed--></--fixed--></--fixed--></--fixed--></✳️component></--optional--></✳️component></--optional--></✳️component></--optional--></--fixed--></*️⃣utility></--optional--></--optional--></--fixed--></--fixed--></✴️custom-name></✴️custom-name></--fixed--></--fixed--></--fixed--></✳️component></--optional--></✳️component></--optional--></--fixed--></--fixed--></--fixed--></--fixed--></--fixed--></✴️custom-name></--fixed--></--fixed--></✳️component></--optional--></✳️component></--optional--></--fixed--></div>
+  </div>
+  <div class="custom__code--wrap">
+    <div class="custom__code--base w-embed">
+      <style>
+:root {
+    --site--max-width: min(var(--site--width), 100vw);
+    --container--main: calc(var(--site--max-width) - var(--site--margin) * 2);
+    --container--full: calc(100vw - var(--site--margin) * 2);
+    --container--small: calc(var(--column-width--plus-gutter) * (var(--site--column-count) - 2) - var(--site--gutter));
+    --site--gutter-total: calc(var(--site--gutter) * (var(--site--column-count) - 1));
+    --column-width--1: calc((var(--container--main) - var(--site--gutter-total)) / var(--site--column-count));
+    --column-width--plus-gutter: calc(var(--column-width--1) + var(--site--gutter));
+    --column-width--2: calc(var(--column-width--plus-gutter) * 2 - var(--site--gutter));
+    --column-width--3: calc(var(--column-width--plus-gutter) * 3 - var(--site--gutter));
+    --column-width--4: calc(var(--column-width--plus-gutter) * 4 - var(--site--gutter));
+    --column-width--5: calc(var(--column-width--plus-gutter) * 5 - var(--site--gutter));
+    --column-width--6: calc(var(--column-width--plus-gutter) * 6 - var(--site--gutter));
+    --column-width--7: calc(var(--column-width--plus-gutter) * 7 - var(--site--gutter));
+    --column-width--8: calc(var(--column-width--plus-gutter) * 8 - var(--site--gutter));
+    --column-width--9: calc(var(--column-width--plus-gutter) * 9 - var(--site--gutter));
+    --column-width--10: calc(var(--column-width--plus-gutter) * 10 - var(--site--gutter));
+    --column-width--11: calc(var(--column-width--plus-gutter) * 11 - var(--site--gutter));
+    --column-width--12: calc(var(--column-width--plus-gutter) * 12 - var(--site--gutter));
+    --column-margin--1: calc(var(--column-width--plus-gutter) * 1);
+    --column-margin--2: calc(var(--column-width--plus-gutter) * 2);
+    --column-margin--3: calc(var(--column-width--plus-gutter) * 3);
+    --column-margin--4: calc(var(--column-width--plus-gutter) * 4);
+    --column-margin--5: calc(var(--column-width--plus-gutter) * 5);
+    --column-margin--6: calc(var(--column-width--plus-gutter) * 6);
+    --column-margin--7: calc(var(--column-width--plus-gutter) * 7);
+    --column-margin--8: calc(var(--column-width--plus-gutter) * 8);
+    --column-margin--9: calc(var(--column-width--plus-gutter) * 9);
+    --column-margin--10: calc(var(--column-width--plus-gutter) * 10);
+    --column-margin--11: calc(var(--column-width--plus-gutter) * 11);
+    --column-margin--12: calc(var(--column-width--plus-gutter) * 12);
+    --breakout-start: [full-start] minmax(0, 1fr) [content-start];
+    --breakout-end: [content-end] minmax(0, 1fr) [full-end];
+    --grid-breakout-single: var(--breakout-start) minmax(0, var(--container--main)) var(--breakout-end);
+    --grid-breakout: var(--breakout-start) repeat(var(--site--column-count), minmax(0, var(--column-width--1))) var(--breakout-end);
+    --_typography---text-transform--none: none;
+    --_typography---text-transform--uppercase: uppercase;
+    --_typography---text-transform--captialize: capitalize;
+    --_typography---text-transform--lowercase: lowercase;
+    --align--start: start;
+    --align--center: center;
+    --align--end: end;
+}
+* {
+	vertical-align: bottom;
+}
+::before, ::after {
+	box-sizing: border-box;
+}
+html {
+	background-color: var(--_theme---background);
+}
+button {
+	background-color: unset;
+	padding: unset;
+	text-align: inherit;
+}
+button:not(:disabled) {
+	cursor: pointer;
+}
+video {
+	width: 100%;
+	object-fit: cover;
+}
+/* remove padding of empty element */
+.wf-empty {
+	padding: 0;
+}
+svg {
+	max-width: 100%;
+}
+section, header, footer {
+	position: relative;
+}
+@media (prefers-color-scheme: light) {
+	option { color: black; }
+}
+img::selection {
+	background: transparent;
+}
+/* Typography */
+body {
+	text-transform: var(--_text-style---text-transform);
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+/* Clear Defaults */
+a:not([class]) {
+	text-decoration: underline;
+}
+h1,h2,h3,h4,h5,h6,p,blockquote,label {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+	text-transform: inherit;
+	text-wrap: inherit;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/* Selection Color */
+::selection {
+	background-color: var(--_theme---selection--background);
+	color: var(--_theme---selection--text);
+}
+/* Margin Trim */
+:is(.u-margin-trim, .u-rich-text) > :not(:not(.w-condition-invisible) ~ :not(.w-condition-invisible)) {
+	margin-top: 0;
+}
+:is(.u-margin-trim, .u-rich-text) > :not(:has(~ :not(.w-condition-invisible))) {
+	margin-bottom: 0;
+}
+/* Line Height Trim */
+:is([class*="u-text-style-"],h1,h2,h3,h4,h5,h6,p):not(.w-richtext,.u-text-trim-off)::before {
+	content: "";
+	display: table;
+	margin-bottom: calc(-0.5lh + var(--_text-style---trim-top));
+}
+:is([class*="u-text-style-"],h1,h2,h3,h4,h5,h6,p):not(.w-richtext,.u-text-trim-off)::after {
+	content: "";
+	display: table;
+	margin-bottom: calc(-0.5lh + var(--_text-style---trim-bottom));
+}
+/* Rich Text Links */
+.w-richtext a {
+	position: relative;
+	z-index: 4;
+}
+/* Line Clamp */
+.u-line-clamp-1, .u-line-clamp-2, .u-line-clamp-3, .u-line-clamp-4 {
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.u-line-clamp-2 { -webkit-line-clamp: 2; }
+.u-line-clamp-3 { -webkit-line-clamp: 3; }
+.u-line-clamp-4 { -webkit-line-clamp: 4; }
+/* Child Contain */
+.u-child-contain > * {
+	width: 100%;
+	max-width: inherit !important;
+  margin-inline: 0 !important;
+	margin-top: 0 !important;
+}
+/* Hide */
+.u-hide-if-empty:empty,
+.u-hide-if-empty:not(:has(> :not(.w-condition-invisible))),
+.u-hide-if-empty-cms:not(:has(.w-dyn-item)),
+.u-embed-js,
+.u-embed-css {
+	display: none !important;
+}
+/* Focus State */
+a, button, :where([tabindex]) {
+	outline-offset: var(--focus--offset-outer);
+}
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+	outline-color: var(--_theme---text);
+	outline-width: var(--focus--width);
+	outline-style: solid;
+}
+/* Global / Clickable Component */
+.wf-design-mode .g_clickable_wrap {
+	z-index: 0;
+}
+.g_clickable_wrap a[href="#"] {
+	display: none;
+}
+.g_clickable_wrap a[href="#"] ~ button {
+	display: block;
+}
+/* Responsive Above */
+@container threshold-large (width >= 62em) {
+	.u-order-unset-above { order: unset !important; }
+	.u-all-unset-above { all: unset !important; }
+	.u-grid-below { display: flex !important; }
+}
+@container threshold-medium (width >= 48em) {
+	.u-order-unset-above { order: unset !important; }
+	.u-all-unset-above { all: unset !important; }
+	.u-grid-below { display: flex !important; }
+}
+@container threshold-small (width >= 30em) {
+	.u-order-unset-above { order: unset !important; }
+	.u-all-unset-above { all: unset !important; }
+	.u-grid-below { display: flex !important; }
+}
+/* Responsive Below */
+@container threshold-large (width < 62em) {
+	.u-order-unset-below { order: unset !important; }
+	.u-all-unset-below { all: unset !important; }
+	.u-grid-above { display: flex !important; }
+}
+@container threshold-medium (width < 48em) {
+	.u-order-unset-below { order: unset !important; }
+	.u-all-unset-below { all: unset !important; }
+	.u-grid-above { display: flex !important; }
+}
+@container threshold-small (width < 30em) {
+	.u-order-unset-below { order: unset !important; }
+	.u-all-unset-below { all: unset !important; }
+	.u-grid-above { display: flex !important; }
+}
+</style>
+    </div>
+    <div class="custom__code--custom w-embed">
+      <style>
+</style>
+    </div>
+  </div>
+  <div class="page-wrapper">
+    <div class="main-wrapper">
+      <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="navbar w-nav">
+        <div class="navbar-contents">
+          <nav role="navigation" id="w-node-f1c308e5-a656-2ef3-31f7-094629e39794-29e39792" class="nav-menu w-nav-menu">
+            <a href="/#About" class="nav-link">About</a>
+            <a href="/#Schedule" class="nav-link">schedule</a>
+            <a href="/#Speakers" class="nav-link">speakers</a>
+            <a href="/#Sponsors" class="nav-link">Partners</a>
+            <a href="/#FAQ" class="nav-link">faq</a>
+            <div class="nav-right-content mobile">
+              <a href="#Sign-up" class="button__white w-button">Sign up</a>
+            </div>
+          </nav>
+          <a href="index.html" id="w-node-f1c308e5-a656-2ef3-31f7-094629e397a2-29e39792" aria-current="page" class="brand w-nav-brand w--current"><img width="194" loading="lazy" alt="website-logo" src="images/otot-logo--2025.svg"></a>
+          <div id="w-node-f1c308e5-a656-2ef3-31f7-094629e397a4-29e39792" class="nav-right">
+            <div class="button__menu w-nav-button"><img loading="lazy" src="images/hamburger-white.svg" alt=""></div>
+            <div class="nav-right-content desktop">
+              <a href="/#Pricing" class="nav-link">Pricing</a>
+              <a href="/#Sign-up" class="button__white w-button">BOOK NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section data-w-id="913f4e61-9ff7-fec9-c83c-f2974fc038d2" class="section__hero--ribbon">
+        <div class="padding-global">
+          <div class="w-layout-blockcontainer container-large hero-space w-container"><img class="ribbon-hero" src="images/3d-ribbon-top.avif" alt="3D Ribbon Wave" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" sizes="100vw" data-w-id="5c633fe1-6ada-6394-f644-b0b6fdb11609" loading="eager" srcset="images/3d-ribbon-top-p-500.png 500w, images/3d-ribbon-top-p-800.png 800w, images/3d-ribbon-top-p-1080.png 1080w, images/3d-ribbon-top-p-1600.png 1600w, images/3d-ribbon-top.avif 3000w">
+            <div class="align__center center-text">
+              <div class="tag-flex">
+                <div class="title">DECEMBER 19-21</div>
+                <div class="title">Live &amp; LIVESTREAM</div>
+              </div>
+              <h1 class="large-heading">The Future of Work is Remote &amp; Beyond</h1>
+            </div>
+            <div class="align__center center-text">
+              <div class="limit hero-cta">
+                <div class="title">MARINA BAY SANDS EXPO, SINGAPORE</div>
+                <p class="text__size--1-125rem">Join us at OTOT Conference 2025, where remote work experts meet, greet and connect with top employers all over the world with real work opportunities.</p>
+                <a href="#Sign-up" class="button__blue w-button">Book your spot now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__hero--collage">
+        <div data-w-id="58a663ef-e062-afd4-58a2-56de74a210f2" class="hero-component">
+          <div class="hero-content-bottom">
+            <div class="hero-image-list">
+              <div id="w-node-_58a663ef-e062-afd4-58a2-56de74a21104-b1d995ab" class="hero-image-group-left">
+                <div data-w-id="58a663ef-e062-afd4-58a2-56de74a21105" style="opacity:0;-webkit-transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hero-image-wrapper image-1"><img sizes="100vw" srcset="images/hero-image-girl-w-microphone_1hero-image-girl-w-microphone.avif 500w, images/hero-image-girl-w-microphone_1hero-image-girl-w-microphone.avif 1333w" alt="hero-image-girl-w-microphone" src="images/hero-image-girl-w-microphone_1hero-image-girl-w-microphone.avif" loading="eager" class="hero-image"></div>
+                <div id="w-node-_58a663ef-e062-afd4-58a2-56de74a21107-b1d995ab" class="hero-small-image-group">
+                  <div data-w-id="58a663ef-e062-afd4-58a2-56de74a21108" style="opacity:0;-webkit-transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hero-image-wrapper is-image2"><img sizes="100vw" srcset="images/hero-image-girls-at-job-fair_1hero-image-girls-at-job-fair.avif 500w, images/hero-image-girls-at-job-fair_1hero-image-girls-at-job-fair.avif 800w, images/hero-image-girls-at-job-fair_1hero-image-girls-at-job-fair.avif 1722w" alt="hero-image-girls-at-job-fair" src="images/hero-image-girls-at-job-fair_1hero-image-girls-at-job-fair.avif" loading="eager" class="header-image-4"></div>
+                  <div data-w-id="58a663ef-e062-afd4-58a2-56de74a2110a" style="opacity:0;-webkit-transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hero-image-wrapper is-image3"><img loading="eager" src="images/hero-image-tablet_1hero-image-tablet.avif" alt="hero-image-tablet" class="header-image-11"></div>
+                </div>
+                <div data-w-id="58a663ef-e062-afd4-58a2-56de74a2110c" style="opacity:0;-webkit-transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hero-image-wrapper is-image4"><img sizes="100vw" srcset="images/hero-image-wfh-guy-in-green_1hero-image-wfh-guy-in-green.avif 500w, images/hero-image-wfh-guy-in-green_1hero-image-wfh-guy-in-green.avif 1000w" alt="hero-image-wfh-guy-in-green" src="images/hero-image-wfh-guy-in-green_1hero-image-wfh-guy-in-green.avif" loading="eager" class="header-image-4"></div>
+              </div>
+              <div data-w-id="58a663ef-e062-afd4-58a2-56de74a2110e" style="opacity:0;-webkit-transform:translate3d(50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hero-image-wrapper is-image5"><img sizes="100vw" srcset="images/hero-image-stage_1hero-image-stage.avif 500w, images/hero-image-stage_1hero-image-stage.avif 800w, images/hero-image-stage_1hero-image-stage.avif 1080w, images/hero-image-stage_1.avif 2400w" alt="hero-image-stage" src="images/hero-image-stage_1.avif" loading="eager" class="header-image-12"></div>
+              <div id="w-node-_58a663ef-e062-afd4-58a2-56de74a21110-b1d995ab" class="header-image-group-right">
+                <div data-w-id="58a663ef-e062-afd4-58a2-56de74a21111" style="opacity:0;-webkit-transform:translate3d(50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hero-image-wrapper is-image6"><img sizes="100vw" srcset="images/hero-image-speaker_1hero-image-speaker.avif 500w, images/hero-image-speaker_1hero-image-speaker.avif 1000w" alt="hero-image-speaker" src="images/hero-image-speaker_1hero-image-speaker.avif" loading="eager" class="header-image-10"></div>
+              </div>
+            </div>
+          </div>
+          <div data-w-id="58a663ef-e062-afd4-58a2-56de74a21113" class="header-trigger"></div>
+        </div>
+      </section>
+      <div class="section-separator"></div>
+      <section id="About" class="section__about--header">
+        <section class="section-global">
+          <div class="padding-global">
+            <div class="w-layout-blockcontainer container-large w-container">
+              <div class="grid__2-column">
+                <div>
+                  <div class="title">About the conference</div>
+                </div>
+                <div class="div-block gap-3rem">
+                  <h2 class="text__size--3-5rem gradient-blue">Where The Future Of Work is Freedom to Do It </h2>
+                  <div class="text__size--1-5rem opacity-white-text">Anytime &amp; Anywhere</div>
+                  <a href="#Sign-up" class="button__blue w-button">Book your spot now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="section__about--slider">
+        <section class="section-global">
+          <div class="w-layout-blockcontainer padding-global w-container">
+            <div class="w-layout-blockcontainer container-large w-container">
+              <div data-delay="10000" data-animation="outin" class="slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                <div class="mask w-slider-mask">
+                  <div class="slide w-slide"><img sizes="100vw" srcset="images/slider-image-2_1slider-image-2.avif 500w, images/slider-image-2_1slider-image-2.avif 800w, images/slider-image-2_1slider-image-2.avif 1080w, images/slider-image-2_1slider-image-2.avif 1600w, images/slider-image-2_1slider-image-2.avif 4032w" alt="photo of past conference" src="images/slider-image-2_1slider-image-2.avif" loading="lazy" class="slider-image">
+                    <div class="slider-foot">
+                      <div class="slider__text">2024 : Breaking the on-site productivity myth - Brandon Tsang</div>
+                      <div class="slider-load-track">
+                        <div class="slider-load-progress"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide w-slide"><img sizes="100vw" srcset="images/slider-image-3_1slider-image-3.avif 500w, images/slider-image-3_1slider-image-3.avif 1500w" alt="photo of past conference" src="images/slider-image-3_1slider-image-3.avif" loading="lazy" class="slider-image">
+                    <div class="slider-foot">
+                      <div>2023 : Breaking the ice session - Mathieu Scrolland</div>
+                      <div class="slider-load-track">
+                        <div class="slider-load-progress"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide w-slide"><img sizes="100vw" srcset="images/slider-image-1_1slider-image-1.avif 500w, images/slider-image-1_1slider-image-1.avif 800w, images/slider-image-1_1slider-image-1.avif 1080w, images/slider-image-1_1slider-image-1.avif 1600w, images/slider-image-1_1slider-image-1.avif 2000w, images/slider-image-1_1slider-image-1.avif 4000w" alt="photo of past conference" src="images/slider-image-1_1slider-image-1.avif" loading="lazy" class="slider-image">
+                    <div class="slider-foot">
+                      <div class="testimonial__name">2024 : Transition from 1-1 to 1-Many - Kiatisuk Sinaphrong</div>
+                      <div class="slider-load-track">
+                        <div class="slider-load-progress"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="left-arrow w-slider-arrow-left"><img loading="lazy" src="images/left-arrow.svg" alt=""></div>
+                <div class="right-arrow w-slider-arrow-right"><img loading="lazy" src="images/right-arrow.svg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="section__about--past">
+        <section class="section-global">
+          <div class="w-layout-blockcontainer padding-global w-container">
+            <div class="w-layout-blockcontainer container-large w-container">
+              <div class="grid__2-column">
+                <div data-w-id="4686786b-da2f-5b5a-4c5a-86de7e97468a" style="opacity:0" class="card__conf">
+                  <div class="text__size--1-5rem">Conference 2023</div>
+                  <p class="text__size--1-125rem">In 2023, we launched in Dubai. OTOT brought together over 100 new collaborations that led to groundbreaking remote work projects.</p>
+                  <a href="#" class="previous-conference-video w-inline-block w-lightbox"><img src="images/past-conference-2023_1past-conference-2023.avif" loading="lazy" sizes="100vw" srcset="images/past-conference-2023_1past-conference-2023.avif 500w, images/past-conference-2023_1past-conference-2023.avif 1000w" alt="photo of past-conference-2023" class="previous-conference-thumb"><img src="images/otot-logo--2023.svg" loading="lazy" width="215" alt="website-logo" class="previous-conf-overlay">
+                    <div class="play-button"><img src="images/Polygon-1.svg" loading="lazy" alt=""></div>
+                    <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "url": "https://www.youtube.com/watch?v=Ojiv9Smi4XE",
+      "originalUrl": "https://www.youtube.com/watch?v=Ojiv9Smi4XE",
+      "width": 940,
+      "height": 528,
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ojiv9Smi4XE/hqdefault.jpg",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FOjiv9Smi4XE%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DOjiv9Smi4XE&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FOjiv9Smi4XE%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+      "type": "video"
+    }
+  ],
+  "group": ""
+}</script>
+                  </a>
+                </div>
+                <div data-w-id="1ae1d26b-0df0-2ac5-e95f-b8c52634f8d8" style="opacity:0" class="card__conf">
+                  <div class="text__size--1-5rem">Conference 2024</div>
+                  <p class="text__size--1-125rem">The 2024 conference significantly expanded its scope, sparking connections over 200 companies worldwide and fostering advancements.</p>
+                  <a href="#" class="previous-conference-video w-inline-block w-lightbox"><img src="images/past-conference-2024_1past-conference-2024.avif" loading="lazy" sizes="100vw" srcset="images/past-conference-2024_1past-conference-2024.avif 500w, images/past-conference-2024_1past-conference-2024.avif 1000w" alt="photo of past-conference-2024
+" class="previous-conference-thumb"><img src="images/otot-logo--2024.svg" loading="lazy" width="Auto" alt="website-logo" class="previous-conf-overlay">
+                    <div class="play-button"><img src="images/Polygon-1.svg" loading="lazy" alt=""></div>
+                    <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "url": "https://www.youtube.com/watch?v=Ojiv9Smi4XE",
+      "originalUrl": "https://www.youtube.com/watch?v=Ojiv9Smi4XE",
+      "width": 940,
+      "height": 528,
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ojiv9Smi4XE/hqdefault.jpg",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FOjiv9Smi4XE%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DOjiv9Smi4XE&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FOjiv9Smi4XE%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+      "type": "video"
+    }
+  ],
+  "group": ""
+}</script>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="section-separator"></div>
+      <section id="Schedule" class="section__schedule">
+        <section class="section-global">
+          <div class="w-layout-blockcontainer padding-global w-container">
+            <div class="w-layout-blockcontainer container-large w-container">
+              <div class="align__left">
+                <div class="limit__medium">
+                  <h2 class="text__size--3-5rem gradient-blue">Event Schedule</h2>
+                  <p class="text__size--1-125rem">Our three-day event offers a rich agenda filled with keynote speeches, interactive sessions, and networking opportunities, ensuring a valuable experience for all attendees.</p>
+                </div>
+              </div>
+              <div class="space-top">
+                <div class="event__accordian">
+                  <div class="accordion__item--trigger spread">
+                    <div class="text__size--1-5rem">Day 1 - Friday 19 Dec</div><img loading="lazy" src="images/down-arrow.svg" alt="" class="accordian__icon">
+                  </div>
+                  <div class="accordion-__item--content">
+                    <div data-w-id="82b16d7d-9def-0a52-41d8-8fda59db093a" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="single-step-wrapper">
+                      <div class="testimonial__text">
+                        <div class="title blue-text no-space-bottom">09:00 - 13:00pm</div>
+                      </div>
+                      <div id="w-node-f71c62e0-cf8a-d26c-4f03-0cfdcfd73ac6-b1d995ab">
+                        <h3 class="no-space-bottom">Opening</h3>
+                      </div>
+                      <div id="w-node-de3276e6-5308-8785-f214-4206678e6510-b1d995ab">
+                        <p class="medium-text limit no-space-bottom">Commence the conference with a dynamic opening ceremony that includes live performances and a motivational welcome address.</p>
+                      </div>
+                    </div>
+                    <div data-w-id="461b38f1-c324-7c93-26b8-52f6a11c6b48" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="single-step-wrapper">
+                      <div class="testimonial__text">
+                        <div class="title blue-text no-space-bottom">13:00 - 14:00pm</div>
+                      </div>
+                      <div id="w-node-_7b4cad63-0680-4c67-bf10-122cd1c90545-b1d995ab">
+                        <h3 class="no-space-bottom">Keynote</h3>
+                      </div>
+                      <div id="w-node-_345b2c31-8f27-40e0-b993-122baceb6406-b1d995ab">
+                        <p class="medium-text limit">Gain inspiration from our keynote speakers as they share their stories and insights into the future of remote work.</p>
+                        <div class="tags-wrap">
+                          <div class="tag">Kwanano Somchai</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-w-id="11e0a3b6-4f6f-4f60-e819-4ce967699594" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="single-step-wrapper">
+                      <div class="testimonial__text">
+                        <div class="title blue-text no-space-bottom">14:00 - 19:00pm</div>
+                      </div>
+                      <div id="w-node-_11e0a3b6-4f6f-4f60-e819-4ce967699598-b1d995ab">
+                        <h3 class="no-space-bottom">Sessions</h3>
+                      </div>
+                      <div id="w-node-_11e0a3b6-4f6f-4f60-e819-4ce96769959b-b1d995ab">
+                        <p class="medium-text limit">Participate in tailored consultation sessions with industry leaders to receive expert advice and insights on enhancing your remote work strategies.</p>
+                        <div class="tags-wrap">
+                          <div class="tag">Angela Thuy</div>
+                          <div class="tag">David Yao </div>
+                          <div class="tag">Marcel Diomans</div>
+                          <div class="tag">Joseph Chew</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-w-id="428e91c7-fc7a-8938-4bc0-06b55b8ba429" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="single-step-wrapper no-underline">
+                      <div class="testimonial__text">
+                        <div class="title blue-text no-space-bottom">19:00 - 21:00pm</div>
+                      </div>
+                      <div id="w-node-_428e91c7-fc7a-8938-4bc0-06b55b8ba42d-b1d995ab">
+                        <h3 class="no-space-bottom">Dinner</h3>
+                      </div>
+                      <div id="w-node-_428e91c7-fc7a-8938-4bc0-06b55b8ba430-b1d995ab">
+                        <p class="medium-text limit no-space-bottom">Wrap up the day by mingling over a fancy dinner, making connections with other creators in a chill, stylish setting.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="event__accordian">
+                  <div class="accordion__item--trigger spread">
+                    <div class="text__size--1-5rem">Day 2 - Saturday 20 Dec</div><img loading="lazy" src="images/down-arrow.svg" alt="" class="accordian__icon">
+                  </div>
+                  <div class="accordion-__item--content">
+                    <div data-w-id="2ea7efc3-533e-1c22-b560-0ba3328d0d31" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="single-step-wrapper">
+                      <div class="testimonial__text">
+                        <div class="title blue-text no-space-bottom">09:00 - 13:00pm</div>
+                      </div>
+                      <div id="w-node-_2ea7efc3-533e-1c22-b560-0ba3328d0d35-b1d995ab">
+                        <h3 class="no-space-bottom">Opening</h3>
+                      </div>
+                      <div id="w-node-_2ea7efc3-533e-1c22-b560-0ba3328d0d38-b1d995ab">
+                        <p class="medium-text limit no-space-bottom">Kick off the conference with an energizing opening ceremony featuring live performances and an inspiring welcome address.</p>
+                      </div>
+                    </div>
+                    <div data-w-id="2ea7efc3-533e-1c22-b560-0ba3328d0d3b" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="single-step-wrapper">
+                      <div class="testimonial__text">
+                        <div class="title blue-text no-space-bottom">13:00 - 17:00pm</div>
+                      </div>
+                      <div id="w-node-_2ea7efc3-533e-1c22-b560-0ba3328d0d3f-b1d995ab">
+                        <h3 class="no-space-bottom">Keynote</h3>
+                      </div>
+                      <div id="w-node-_2ea7efc3-533e-1c22-b560-0ba3328d0d42-b1d995ab">
+                        <p class="medium-text limit">Be inspired by our keynote speakers as they share their success stories and visions for the future of remote work.</p>
+                        <div class="tags-wrap">
+                          <div class="tag">Tang Yue</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-w-id="2ea7efc3-533e-1c22-b560-0ba3328d0d4c" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="single-step-wrapper">
+                      <div class="testimonial__text">
+                        <div class="title blue-text no-space-bottom">17:00 - 19:00pm</div>
+                      </div>
+                      <div id="w-node-_2ea7efc3-533e-1c22-b560-0ba3328d0d50-b1d995ab">
+                        <h3 class="no-space-bottom">Sessions</h3>
+                      </div>
+                      <div id="w-node-_2ea7efc3-533e-1c22-b560-0ba3328d0d53-b1d995ab">
+                        <p class="medium-text limit">Be inspired by our keynote speakers as they share their success stories and visions for the future of digital creation.</p>
+                        <div class="tags-wrap">
+                          <div class="tag">Tang Yue</div>
+                          <div class="tag">Chantelle Grossman</div>
+                          <div class="tag">Nguyen Vanh</div>
+                          <div class="tag">Cruise Kapfessen</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-w-id="2ea7efc3-533e-1c22-b560-0ba3328d0d63" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="single-step-wrapper no-underline">
+                      <div class="testimonial__text">
+                        <div class="title blue-text no-space-bottom">19:00 - 21:00pm</div>
+                      </div>
+                      <div id="w-node-_2ea7efc3-533e-1c22-b560-0ba3328d0d67-b1d995ab">
+                        <h3 class="no-space-bottom">Dinner</h3>
+                      </div>
+                      <div id="w-node-_2ea7efc3-533e-1c22-b560-0ba3328d0d6a-b1d995ab">
+                        <p class="medium-text limit no-space-bottom">End the day networking over a gourmet dinner, connecting with fellow creators in a relaxed, elegant atmosphere.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="event__accordian">
+                  <div class="accordion__item--trigger spread">
+                    <div class="text__size--1-5rem">Day 3 - Sunday 21 Dec</div><img loading="lazy" src="images/down-arrow.svg" alt="" class="accordian__icon">
+                  </div>
+                  <div class="accordion-__item--content">
+                    <div data-w-id="8305254b-3729-74b9-fc9e-dde7e24060d0" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="single-step-wrapper">
+                      <div class="testimonial__text">
+                        <div class="title blue-text no-space-bottom">09:00 - 13:00pm</div>
+                      </div>
+                      <div id="w-node-_8305254b-3729-74b9-fc9e-dde7e24060d4-b1d995ab">
+                        <h3 class="no-space-bottom">Opening</h3>
+                      </div>
+                      <div id="w-node-_8305254b-3729-74b9-fc9e-dde7e24060d7-b1d995ab">
+                        <p class="medium-text limit no-space-bottom">Kick off the conference with an energizing opening ceremony featuring live performances and an inspiring welcome address.</p>
+                      </div>
+                    </div>
+                    <div data-w-id="8305254b-3729-74b9-fc9e-dde7e24060da" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="single-step-wrapper">
+                      <div class="testimonial__text">
+                        <div class="title blue-text no-space-bottom">13:00 - 17:00pm</div>
+                      </div>
+                      <div id="w-node-_8305254b-3729-74b9-fc9e-dde7e24060de-b1d995ab">
+                        <h3 class="no-space-bottom">Keynote</h3>
+                      </div>
+                      <div id="w-node-_8305254b-3729-74b9-fc9e-dde7e24060e1-b1d995ab">
+                        <p class="medium-text limit">Be inspired by our keynote speakers as they share their success stories and visions for the future of remote work.</p>
+                        <div class="tags-wrap">
+                          <div class="tag">Angela Thuy</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-w-id="8305254b-3729-74b9-fc9e-dde7e24060eb" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="single-step-wrapper">
+                      <div class="testimonial__text">
+                        <div class="title blue-text no-space-bottom">17:00 - 19:00pm</div>
+                      </div>
+                      <div id="w-node-_8305254b-3729-74b9-fc9e-dde7e24060ef-b1d995ab">
+                        <h3 class="no-space-bottom">Sessions</h3>
+                      </div>
+                      <div id="w-node-_8305254b-3729-74b9-fc9e-dde7e24060f2-b1d995ab">
+                        <p class="medium-text limit">Be inspired by our keynote speakers as they share their success stories and visions for the future of digital creation.</p>
+                        <div class="tags-wrap">
+                          <div class="tag">Mariah Hee</div>
+                          <div class="tag">Andre Maximus</div>
+                          <div class="tag">Kingston Doe</div>
+                          <div class="tag">Will Vatreka</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-w-id="8305254b-3729-74b9-fc9e-dde7e2406102" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="single-step-wrapper no-underline">
+                      <div class="testimonial__text">
+                        <div class="title blue-text no-space-bottom">19:00 - 21:00pm</div>
+                      </div>
+                      <div id="w-node-_8305254b-3729-74b9-fc9e-dde7e2406106-b1d995ab">
+                        <h3 class="no-space-bottom">Dinner</h3>
+                      </div>
+                      <div id="w-node-_8305254b-3729-74b9-fc9e-dde7e2406109-b1d995ab">
+                        <p class="medium-text limit no-space-bottom">End the day networking over a gourmet dinner, connecting with fellow creators in a relaxed, elegant atmosphere.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="section-separator"></div>
+      <section id="Speakers" class="section__speakers">
+        <section class="section-global">
+          <div class="w-layout-blockcontainer padding-global w-container">
+            <div class="w-layout-blockcontainer container-large w-container">
+              <div class="align__left">
+                <div class="limit__medium">
+                  <h2 class="text__size--3-5rem gradient-blue">Keynote Speakers</h2>
+                  <p class="text__size--1-125rem">Our event is proudly sponsored by leading partners &amp; companies committed to supporting the remote work movement.</p>
+                </div>
+              </div>
+              <div class="grid__3-column">
+                <div class="card__speaker">
+                  <div data-w-id="766f13bf-3231-d61a-e598-9960c8a73c3d" class="speaker__image--wrap">
+                    <div class="speaker__image--crop"><img src="images/speaker-angela-thuy_1.avif" loading="lazy" alt="speaker-angela-thuy" class="speaker__image"></div>
+                    <div style="opacity:0" class="speaker__image--cover">
+                      <div class="text__size--1-5rem">Angela spearheaded AI integration in HR recruitment tools and implemented smart WFH systems for remote workers for VietCrop across 5 geographical localities.</div>
+                      <div class="social-logos-wrap space-top-tiny">
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/Facebook.svg" alt="Facebook"></a>
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/instagram-logo.svg" alt="Instagram"></a>
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/x-logo.svg" alt="Twitter"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="speaker__name--wrap">
+                    <div class="text__size--1-25rem">Angela Thuy</div>
+                    <div class="testimonial__job">VP, Human Resources at VietCrop Intl</div>
+                  </div>
+                </div>
+                <div class="card__speaker">
+                  <div data-w-id="0bd99021-1c77-a20c-bbf9-6adf2c822cec" class="speaker__image--wrap">
+                    <div class="speaker__image--crop"><img src="images/speaker-kanokwan_1.avif" loading="lazy" alt="speaker-kanokwan" class="speaker__image"></div>
+                    <div style="opacity:0" class="speaker__image--cover">
+                      <div class="text__size--1-5rem">Mister Somchai led efforts to expand over 40% of its workforce being remote, Dusit Pornthip Steel is a trending leader in remote work in Thailand &amp; Cambodia.</div>
+                      <div class="social-logos-wrap space-top-tiny">
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/Facebook.svg" alt="Facebook"></a>
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/instagram-logo.svg" alt="Instagram"></a>
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/x-logo.svg" alt="Twitter"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="speaker__name--wrap">
+                    <div class="text__size--1-25rem">Kwankano Somchai</div>
+                    <div class="testimonial__job">COO at Dusit Pornthip Steel</div>
+                  </div>
+                </div>
+                <div class="card__speaker">
+                  <div data-w-id="e7406f6b-b6e9-d063-7eab-7ecbf26fde71" class="speaker__image--wrap">
+                    <div class="speaker__image--crop"><img src="images/speaker-tang-yue_1.avif" loading="lazy" alt="speaker-tang-yue" class="speaker__image"></div>
+                    <div style="opacity:0" class="speaker__image--cover">
+                      <div class="text__size--1-5rem">Tang Yue is co-founder and Chief Innovation Officer at ZuoGong.AI, a new AI startup that focuses on helping PMEBs work from anywhere in the world.</div>
+                      <div class="social-logos-wrap space-top-tiny">
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/Facebook.svg" alt="Facebook"></a>
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/instagram-logo.svg" alt="Instagram"></a>
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/x-logo.svg" alt="Twitter"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="speaker__name--wrap">
+                    <div class="text__size--1-25rem">Tang Yue</div>
+                    <div class="testimonial__job">HR Director at ZuoGong.AI</div>
+                  </div>
+                </div>
+                <div class="card__speaker">
+                  <div data-w-id="edcba0e7-c493-6eed-4016-737fbb9a729e" class="speaker__image--wrap">
+                    <div class="speaker__image--crop"><img src="images/speaker-Georg-Jensen_1speaker-Georg-Jensen.avif" loading="lazy" sizes="100vw" srcset="images/speaker-Georg-Jensen_1speaker-Georg-Jensen.avif 500w, images/speaker-Georg-Jensen_1speaker-Georg-Jensen.avif 916w" alt="speaker-georg-jensen" class="speaker__image"></div>
+                    <div style="opacity:0" class="speaker__image--cover">
+                      <div class="text__size--1-5rem">Georg Jensen is Director of Innovations at Aukey, a China-based company with over 10,000 employees across the world. It boast over 30% fully remote workers.</div>
+                      <div class="social-logos-wrap space-top-tiny">
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/Facebook.svg" alt="Facebook"></a>
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/instagram-logo.svg" alt="Instagram"></a>
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/x-logo.svg" alt="Twitter"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="speaker__name--wrap">
+                    <div class="text__size--1-25rem">Georg Jensen</div>
+                    <div class="testimonial__job">Director, Innovations at Aukey</div>
+                  </div>
+                </div>
+                <div class="card__speaker">
+                  <div data-w-id="38325106-2af5-f74d-da0b-c76985e5d186" class="speaker__image--wrap">
+                    <div class="speaker__image--crop"><img src="images/speaker-Tomoko-Hyji_1speaker-Tomoko-Hyji.avif" loading="lazy" sizes="100vw" srcset="images/speaker-Tomoko-Hyji_1speaker-Tomoko-Hyji.avif 500w, images/speaker-Tomoko-Hyji_1speaker-Tomoko-Hyji.avif 930w" alt="speaker-Tomoko-Hyji" class="speaker__image"></div>
+                    <div style="opacity:0" class="speaker__image--cover">
+                      <div class="text__size--1-5rem">Tomoko leads product development at Yomo Industries, an upcoming leader in remote working tools and technologies, used by over 600 companies in Japan. </div>
+                      <div class="social-logos-wrap space-top-tiny">
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/Facebook.svg" alt="Facebook"></a>
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/instagram-logo.svg" alt="Instagram"></a>
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/x-logo.svg" alt="Twitter"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="speaker__name--wrap">
+                    <div class="text__size--1-25rem">Tomoko Hyji</div>
+                    <div class="testimonial__job">AVP, Product at Yomo Industries</div>
+                  </div>
+                </div>
+                <div class="card__speaker">
+                  <div data-w-id="b2ec1584-85e0-a48b-e25b-98a0d4f7cd14" class="speaker__image--wrap">
+                    <div class="speaker__image--crop"><img src="images/speaker-Warren-Duffy_1speaker-Warren-Duffy.avif" loading="lazy" alt="speaker-Warren-Duffy" class="speaker__image"></div>
+                    <div style="opacity:0" class="speaker__image--cover">
+                      <div class="text__size--1-5rem">Warren Duffy recently pushed for significant WFH technologies and enabled over 40% workforce to fully embrace remote working across Australia.</div>
+                      <div class="social-logos-wrap space-top-tiny">
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/Facebook.svg" alt="Facebook"></a>
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/instagram-logo.svg" alt="Instagram"></a>
+                        <a href="#" class="social-logo w-inline-block"><img loading="lazy" src="images/x-logo.svg" alt="Twitter"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="speaker__name--wrap">
+                    <div class="text__size--1-25rem">Warren Duffy</div>
+                    <div class="testimonial__job">Operations Director at Baseus</div>
+                  </div>
+                </div>
+              </div>
+              <div class="spacer__xlarge"></div>
+              <div class="align__center">
+                <a href="speaker-list.html" class="button__white--alt w-button">VIEW FULL LIST OF SPEAKERS</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="section-separator"></div>
+      <section id="Sponsors" class="section__sponsors">
+        <section class="section-global">
+          <div class="w-layout-blockcontainer padding-global w-container">
+            <div class="w-layout-blockcontainer container-large w-container">
+              <div class="align__center">
+                <div class="limit__medium">
+                  <h2 class="text__size--3-5rem gradient-blue">Powering the world’s best companies</h2>
+                  <p class="text__size--1-125rem">Our event is proudly sponsored by leading partners &amp; companies committed to supporting the remote work movement.</p>
+                </div>
+              </div>
+              <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="w-tabs">
+                <div class="tabs-menu w-tab-menu">
+                  <a data-w-tab="Tab 1" class="tab-link w-inline-block w-tab-link w--current">
+                    <div class="title in-tabs">PARTNERS</div>
+                  </a>
+                  <a data-w-tab="Tab 2" class="tab-link w-inline-block w-tab-link">
+                    <div class="title in-tabs">SPONSORS</div>
+                  </a>
+                </div>
+                <div class="w-tab-content">
+                  <div data-w-tab="Tab 1" class="tab-pane-tab-1 w-tab-pane w--tab-active">
+                    <div class="logos-grid">
+                      <div class="logo-wrap"><img loading="lazy" src="images/Sitemark-Color.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/Manila-black.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/Umbrella-Color.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/Montreal-black.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/KOBE-black.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/theo-black.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/Greenish-Color.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/Swiss-black.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/Group-3565.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/KOBE-black.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/Swiss-black.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/webflow.svg" alt="logo-of-partner"></div>
+                    </div>
+                  </div>
+                  <div data-w-tab="Tab 2" class="tab-pane-tab-2 w-tab-pane">
+                    <div class="logos-grid">
+                      <div class="logo-wrap"><img loading="lazy" src="images/KOBE-black.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/Montreal-black.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/theo-black.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/Sitemark-Color.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/Greenish-Color.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/Swiss-black.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/Manila-black.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/Umbrella-Color.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/Group-3565.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/KOBE-black.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/Swiss-black.svg" alt="logo-of-partner"></div>
+                      <div class="logo-wrap"><img loading="lazy" src="images/webflow.svg" alt="logo-of-partner"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="spacer__xlarge"></div>
+              <div class="align__center">
+                <a href="#Sign-up" class="button__blue w-button">Book your SPOT NOW</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="section-separator"></div>
+      <section class="section__testimonials">
+        <section class="section-global">
+          <div class="w-layout-blockcontainer padding-global w-container">
+            <div class="w-layout-blockcontainer container-large w-container">
+              <div class="align__center center-text">
+                <div class="limit__medium">
+                  <h2 class="text__size--3-5rem text__center gradient-blue">Testimonials</h2>
+                  <p class="text__size--1-125rem">Hear from our attendees of our past conferences</p>
+                </div>
+              </div>
+              <div class="grid__3-column">
+                <div id="w-node-e1020210-f0d1-5827-cbb0-4002b6b14bbe-b1d995ab" data-w-id="e1020210-f0d1-5827-cbb0-4002b6b14bbe" class="card__testimonial">
+                  <div class="align__center center-text"><img src="images/“.svg" loading="lazy" alt="" class="testimonial__icon">
+                    <div class="testimonial__text">
+                      <div class="text__size--1-25rem">&quot;I left feeling motivated, equipped with new skills, and connected to a network of professionals who share my dedication to remote work tools and technologies.&quot;</div>
+                    </div>
+                  </div>
+                  <div class="align__center center-text"><img src="images/attendee-03.avif" loading="lazy" width="40" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="attendee-03" class="testimonial__photo">
+                    <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="testimonial__name">Summi Angelo</div>
+                    <div class="testimonial__job">Digital Project Lead</div>
+                  </div>
+                </div>
+                <div id="w-node-_865f6565-fa46-75f8-affe-dc0e708c3f11-b1d995ab" data-w-id="865f6565-fa46-75f8-affe-dc0e708c3f11" class="card__testimonial">
+                  <div class="align__center center-text"><img src="images/“.svg" loading="lazy" alt="">
+                    <div class="testimonial__text">
+                      <div class="text__size--1-25rem">&quot;The conference&#x27;s networking opportunities were priceless. I got to know developers and business executives who have subsequently become mentors and partners.&quot;</div>
+                    </div>
+                  </div>
+                  <div class="align__center center-text"><img src="images/attendee-02.avif" loading="lazy" width="40" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="attendee-02" class="testimonial__photo">
+                    <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="testimonial__name">Zach Leed</div>
+                    <div class="testimonial__job">Startup Talent Lead</div>
+                  </div>
+                </div>
+                <div id="w-node-_96f9256b-8686-d6b6-abe8-7801de205243-b1d995ab" data-w-id="96f9256b-8686-d6b6-abe8-7801de205243" class="card__testimonial">
+                  <div class="align__center center-text"><img src="images/“.svg" loading="lazy" alt="">
+                    <div class="testimonial__text">
+                      <div class="text__size--1-25rem">&quot;Attending the OTOT Conference was a turning point in my career. The sessions were not only insightful but also practical, providing tools I could immediately apply.&quot;</div>
+                    </div>
+                  </div>
+                  <div class="align__center center-text"><img src="images/attendee-01.avif" loading="lazy" width="40" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="attendee-01" class="testimonial__photo">
+                    <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="testimonial__name">Lucille Kratov</div>
+                    <div class="testimonial__job">HR Specialist</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="section-separator"></div>
+      <section id="Pricing" class="section__pricing"><img class="ribbon__pricing" src="images/3d-ribbon-btm.avif" alt="3D Ribbon Wave" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" sizes="100vw" data-w-id="4f688ae2-86e7-1134-fae4-7b757c9e4ac8" loading="lazy" srcset="images/3d-ribbon-btm-p-500.png 500w, images/3d-ribbon-btm-p-800.png 800w, images/3d-ribbon-btm-p-1080.png 1080w, images/3d-ribbon-btm-p-1600.png 1600w, images/3d-ribbon-btm.avif 3000w">
+        <section class="section-global">
+          <div class="w-layout-blockcontainer padding-global w-container">
+            <div class="w-layout-blockcontainer container-large w-container">
+              <div class="align__center center-text">
+                <div class="limit__medium">
+                  <h2 class="text__size--3-5rem text__center gradient-blue">Pricing plans</h2>
+                  <p class="text__size--1-125rem">Choose one of three available ticket tiers, all of which are available for purchase when you reach out.</p>
+                </div>
+              </div>
+              <div class="grid__3-column space-top-large">
+                <div class="card__pricing">
+                  <div class="pricing__top">
+                    <div class="pricing-head">
+                      <div class="title">OTOT conf 2025</div>
+                    </div>
+                    <div class="pricing-card-content">
+                      <div>
+                        <h3>Standard Pass</h3>
+                        <p>Access to sessions, exhibits, and networking events throughout the conference.</p>
+                      </div>
+                      <div>
+                        <div class="price"><span class="testimonial__job">$ </span>89</div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#Sign-up" class="pricing__button w-button">Sign up now</a>
+                </div>
+                <div class="card__pricing">
+                  <div class="pricing__top">
+                    <div class="pricing-head">
+                      <div class="title">OTOT conf 2025</div>
+                    </div>
+                    <div class="pricing-card-content">
+                      <div>
+                        <h3>Premium Pass</h3>
+                        <p>Includes all basic features plus priority seating and workshop access.</p>
+                      </div>
+                      <div>
+                        <div class="price"><span class="testimonial__job">$ </span>159</div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#Sign-up" class="pricing__button w-button">Sign up now</a>
+                </div>
+                <div class="card__pricing">
+                  <div class="pricing__top">
+                    <div class="pricing-head">
+                      <div class="title">OTOT conf 2025</div>
+                    </div>
+                    <div class="pricing-card-content">
+                      <div>
+                        <h3>VIP Pass</h3>
+                        <p>All premium benefits plus exclusive speaker meet-and-greet and VIP dinner.</p>
+                      </div>
+                      <div>
+                        <div class="price"><span class="testimonial__job">$ </span>259</div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#Sign-up" class="pricing__button w-button">Sign up now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="section-separator"></div>
+      <section id="FAQ" class="section__faq">
+        <section class="section-global">
+          <div class="w-layout-blockcontainer padding-global w-container">
+            <div class="w-layout-blockcontainer container-large w-container">
+              <div class="align__center center-text">
+                <div class="limit__medium">
+                  <h2 class="text__size--3-5rem text__center gradient-blue">Your questions answered</h2>
+                  <p class="text__size--1-125rem">Frequently asked questions to help clear your doubts and make more informed decisions.</p>
+                </div>
+              </div>
+              <div class="grid__2-column">
+                <div>
+                  <div class="faq__accordion">
+                    <div class="accordion__item--trigger"><img loading="lazy" src="images/white-accordion.svg" alt="" class="accordian__icon">
+                      <div class="faq__qn">What are the dates of the conference?</div>
+                    </div>
+                    <div class="accordion-__item--content">
+                      <div class="faq__answer">The conference will be held from 19 December to 21 December 2025. </div>
+                    </div>
+                  </div>
+                  <div class="faq__accordion">
+                    <div class="accordion__item--trigger"><img loading="lazy" src="images/white-accordion.svg" alt="" class="accordian__icon">
+                      <div class="faq__qn">What is the focus of this year&#x27;s conference?</div>
+                    </div>
+                    <div class="accordion-__item--content">
+                      <div class="faq__answer">This year&#x27;s conference centers around the theme of &quot;Future of Work&quot;. We&#x27;ll be exploring the latest trends, challenges, and opportunities in key areas of Remote Work such as tools, technologies, models and case studies.</div>
+                    </div>
+                  </div>
+                  <div class="faq__accordion">
+                    <div class="accordion__item--trigger"><img loading="lazy" src="images/white-accordion.svg" alt="" class="accordian__icon">
+                      <div class="faq__qn">How can I register for the conference? What are the fees?</div>
+                    </div>
+                    <div class="accordion-__item--content">
+                      <div class="faq__answer">You can register for the conference through our website.  Standard passes go for  $89, Premium passes go for $159 and VIP passes go for $259 each. Contact us direct for bulk discount deals.</div>
+                    </div>
+                  </div>
+                  <div class="faq__accordion">
+                    <div class="accordion__item--trigger"><img loading="lazy" src="images/white-accordion.svg" alt="" class="accordian__icon">
+                      <div class="faq__qn">What are the health and safety protocols for the event?</div>
+                    </div>
+                    <div class="accordion-__item--content">
+                      <div class="faq__answer">The health and safety of our attendees are our top priority. We will be implementing enhanced cleaning procedures, hand sanitizing stations, adherence to local health guidelines.  Please refer to our website for the most up-to-date information.</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="faq__accordion">
+                    <div class="accordion__item--trigger"><img loading="lazy" src="images/white-accordion.svg" alt="" class="accordian__icon">
+                      <div class="faq__qn">Where will the conference be held?</div>
+                    </div>
+                    <div class="accordion-__item--content">
+                      <div class="faq__answer">This year&#x27;s conference will be held at Marine Bay Sands Expo Hall located at 10 Bayfront Ave, Singapore 018956.</div>
+                    </div>
+                  </div>
+                  <div class="faq__accordion">
+                    <div class="accordion__item--trigger"><img loading="lazy" src="images/white-accordion.svg" alt="" class="accordian__icon">
+                      <div class="faq__qn">Who should attend this conference?</div>
+                    </div>
+                    <div class="accordion-__item--content">
+                      <div class="faq__answer">This conference is designed for a wide range of professionals, including software engineers, data scientists, business analysts, startup founders, technology executives, researchers, and students who are interested in Remote Work.</div>
+                    </div>
+                  </div>
+                  <div class="faq__accordion">
+                    <div class="accordion__item--trigger"><img loading="lazy" src="images/white-accordion.svg" alt="" class="accordian__icon">
+                      <div class="faq__qn">What is included in my conference registration?</div>
+                    </div>
+                    <div class="accordion-__item--content">
+                      <div class="faq__answer">Your full conference registration includes access to all keynote presentations, breakout sessions, networking events, the exhibition hall, and conference materials (digital or otherwise). Meals and accommodation are typically not included unless explicitly stated in your registration package.</div>
+                    </div>
+                  </div>
+                  <div class="faq__accordion">
+                    <div class="accordion__item--trigger"><img loading="lazy" src="images/white-accordion.svg" alt="" class="accordian__icon">
+                      <div class="faq__qn">What networking opportunities will be available?</div>
+                    </div>
+                    <div class="accordion-__item--content">
+                      <div class="faq__answer">We&#x27;ve built in several opportunities for networking, including dedicated networking sessions, coffee breaks, lunch periods, and an evening reception. Our conference app will also facilitate connections between attendees.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="section-separator"></div>
+      <section id="Sign-up" class="section__sign-up sign-up-cta">
+        <section class="section-global">
+          <div class="w-layout-blockcontainer padding-global w-container">
+            <div class="w-layout-blockcontainer container-large w-container">
+              <div class="grid__2-column">
+                <div class="spread-vertical limit">
+                  <div>
+                    <p class="medium-text">Don&#x27;t miss out—indicate your interest to book your seats today to join the leading event for remote work experts.</p>
+                    <h2 class="text__size--3-5rem gradient-blue">Secure your spot</h2>
+                  </div>
+                  <div>
+                    <a href="mailto:hello@otot.conf?subject=Custom%20offer%20to%20OTOT%20Conference%202025" class="button__blue w-button">reach out directly</a>
+                    <div class="tiny-text-widget"><img loading="lazy" src="images/white-check.svg" alt="">
+                      <div>Reach out through email for a custom offer</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-block w-form">
+                  <h3 class="heading-2rem">Indicate your interest</h3>
+                  <form id="wf-form-Email-Form-of-OTOT-Conference-2025" name="wf-form-Email-Form-of-OTOT-Conference-2025" data-name="Email Form of OTOT Conference 2025" action="https://formbold.com/s/3OxVN" method="post" class="form" data-wf-page-id="6807cd3aa4e7340fb1d995ab" data-wf-element-id="6c2e5051-e8b0-866e-12d9-2b91c61eb251">
+                    <div class="split-fields">
+                      <div><label for="name" class="field-label">Your name</label><input class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="e.g. Jackson Doe" type="text" id="name" required=""></div>
+                      <div><label for="email" class="field-label">Your mail</label><input class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="e.g. hello@gmail.com" type="email" id="email" required=""></div>
+                    </div>
+                    <div class="radio-button-wrapper"><label for="name-2" class="field-label">Choose your ticket</label><label class="radio-button-field w-radio">
+                        <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input"></div><input type="radio" name="Ticket" id="Basic" data-name="Ticket" style="opacity:0;position:absolute;z-index:-1" value="Basic"><span class="radio-button-label w-form-label" for="Basic">Standard</span>
+                      </label><label class="radio-button-field w-radio">
+                        <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input"></div><input type="radio" name="Ticket" id="Premium" data-name="Ticket" style="opacity:0;position:absolute;z-index:-1" value="Premium"><span class="radio-button-label w-form-label" for="Premium">Premium</span>
+                        <div class="top-tag">top</div>
+                      </label><label class="radio-button-field w-radio">
+                        <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input"></div><input type="radio" name="Ticket" id="Special" data-name="Ticket" style="opacity:0;position:absolute;z-index:-1" value="Special"><span class="radio-button-label w-form-label" for="Special">VIP</span>
+                      </label></div>
+                    <div class="code-embed w-embed"><!--  Currently using FormBold as backend form  -->
+                      <!--  This is invisible field to let FormBold know the source -->
+                      <input type="hidden" name="subject" value="OTOT-2025-conference-form">
+                    </div><input type="submit" data-wait="Please wait..." class="button__blue full-width w-button" value="Submit">
+                    <div class="tiny-text">We will get in touch with the details after you sign up</div>
+                  </form>
+                  <div class="w-form-done">
+                    <div>Thank you! Your submission has been received!</div>
+                  </div>
+                  <div class="w-form-fail">
+                    <div>Oops! Something went wrong while submitting the form.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="section-separator"></div>
+      <section class="footer">
+        <div class="w-layout-blockcontainer container-large w-container">
+          <div class="footer-top">
+            <a href="index.html" aria-current="page" class="w-inline-block w--current"><img src="images/otot-logo--2025.svg" loading="lazy" width="194" alt="website-logo"></a>
+            <div class="tag-flex vertical">
+              <div class="title no-space-bottom">DECEMBER 19-21</div>
+              <div class="title no-space-bottom">Live &amp; LIVESTREAM</div>
+            </div>
+          </div>
+          <div class="footer-content">
+            <div class="footer-1-links">
+              <a href="/#About" id="w-node-_8d47f0fd-0e1b-708d-8fa6-8d4fe9651485-e9651479" class="nav-link">About</a>
+              <a href="/#Schedule" id="w-node-_8d47f0fd-0e1b-708d-8fa6-8d4fe9651487-e9651479" class="nav-link">Schedule</a>
+              <a href="/#Speakers" id="w-node-_8d47f0fd-0e1b-708d-8fa6-8d4fe9651489-e9651479" class="nav-link">Speakers</a>
+              <a href="/#Sponsors" id="w-node-ea2e799c-5582-cc21-3bf9-60eb0209f9ad-e9651479" class="nav-link">Partners</a>
+              <a href="/#Pricing" id="w-node-_8d47f0fd-0e1b-708d-8fa6-8d4fe965148b-e9651479" class="nav-link">Pricing</a>
+              <a href="/#FAQ" class="nav-link">FAQ</a>
+            </div>
+            <div class="social-logos-wrap">
+              <a href="http://facebook.com" target="_blank" class="social-logo white w-inline-block"><img loading="lazy" src="images/Facebook_1.svg" alt=""></a>
+              <a href="http://instagram.com" target="_blank" class="social-logo white w-inline-block"><img loading="lazy" src="images/instagram-logo_1.svg" alt=""></a>
+              <a href="http://twitter.com" target="_blank" class="social-logo white w-inline-block"><img loading="lazy" src="images/social-media-social-media-logo-twitter.svg" alt=""></a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom-content">
+              <div class="small-text">Powered by</div>
+              <a href="http://sold.com.sg" target="_blank" class="webflow-link w-inline-block"><img loading="lazy" src="images/Logo---Wordmark-white.svg" alt="logo-of-SOLD" class="image"></a>
+            </div>
+            <div class="footer-horizontal-links-2">
+              <div class="small-text">2025 © OTOT Conference </div>
+              <a href="terms.html" class="footer-link-small">Terms</a>
+              <a href="privacy.html" class="footer-link-small">Privacy</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6807cd3aa4e7340fb1d995b5" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/otot-conference.js" type="text/javascript"></script>
+</body>
+</html>
