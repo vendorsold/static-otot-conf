@@ -1,0 +1,10 @@
+{
+  "name": "webflow-site",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node add-lang.js"
+  },
+  "dependencies": {
+    "replace-in-file": "^7.0.1"
+  }
+}
